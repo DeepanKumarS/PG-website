@@ -7,7 +7,7 @@ export default function HeroBanner() {
       {/* Background image + dark overlay so white text stays readable */}
       <div className="absolute inset-0">
         <img
-          src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1600&q=60"
+          src="/Designer.png"
           alt="Cozy PG room interior"
           className="h-full w-full object-cover"
         />
@@ -21,7 +21,7 @@ export default function HeroBanner() {
             {site.tagline}
           </h1>
           <p className="mt-4 text-lg text-slate-200">
-            Browse verified PG accommodations across our locations. Compare rents, amenities, and facilities, then connect directly with property owners via WhatsApp or phone call for quick and hassle-free inquiries.
+            Experience comfortable and affordable PG living with modern amenities, flexible room-sharing options, and a welcoming environment for students and working professionals.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link to="/listings" className="rounded-lg bg-orange-400 px-6 py-3 font-semibold text-white shadow-lg hover:text-white-700">

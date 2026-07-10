@@ -8,6 +8,25 @@ export default function ListingDetail() {
   const { id } = useParams();       // the :id from /listing/:id
   const room = getRoomById(id);     // look it up in the data
 
+  // Open the maps app on phones (Google Maps on Android/iOS, with a web fallback);
+  // open the Google Maps website on laptops.
+  function openMaps(e) {
+    e.preventDefault();
+    const ua = navigator.userAgent;
+    const web = `https://www.google.com/maps/search/?api=1&query=${room.lat},${room.lng}`;
+    if (/Android/i.test(ua)) {
+      window.location.href = `geo:${room.lat},${room.lng}?q=${room.lat},${room.lng}(${encodeURIComponent(room.areaName)})`;
+    } else if (/iPhone|iPad|iPod/i.test(ua)) {
+      // Try the Google Maps app; if it isn't installed, fall back to the website.
+      window.location.href = `comgooglemaps://?q=${room.lat},${room.lng}`;
+      setTimeout(() => {
+        window.location.href = web;
+      }, 1200);
+    } else {
+      window.open(web, "_blank", "noopener,noreferrer");
+    }
+  }
+
   // Guard: if no room matches this id, show a friendly fallback.
   if (!room) {
     return (
@@ -23,7 +42,7 @@ export default function ListingDetail() {
 
   return (
     <section className="mx-auto max-w-5xl px-4 py-8">
-      <Link to="/listings" className="text-sm text-blue-600 hover:underline">
+      <Link to="/listings" className="inline-flex items-center gap-1 rounded-lg bg-orange-400 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-orange-500">
         ← Back to Listings
       </Link>
 
@@ -68,6 +87,7 @@ export default function ListingDetail() {
           <p className="mt-1 text-sm text-slate-500">{room.areaName}, {room.cityName}</p>
           <a
             href={`https://www.google.com/maps/search/?api=1&query=${room.lat},${room.lng}`}
+            onClick={openMaps}
             target="_blank"
             rel="noopener noreferrer"
             className="mt-3 inline-flex items-center gap-2 rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700"

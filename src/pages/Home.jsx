@@ -27,6 +27,7 @@ export default function Home() {
             { count: "1", label: "Single Sharing" },
             { count: "2", label: "Two Sharing" },
             { count: "3", label: "Three Sharing" },
+            { count: "4", label: "Four Sharing" },
           ].map((s) => (
             <div
               key={s.count}

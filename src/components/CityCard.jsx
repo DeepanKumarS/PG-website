@@ -1,11 +1,8 @@
 import { Link } from "react-router-dom";
 
 export default function CityCard({ city }) {
-  // Count every room across all of this city's areas
-  const roomCount = city.areas.reduce((sum, area) => sum + area.rooms.length, 0);
-
   // Grab the first available image to use as the card cover
-  const cover = city.areas[0]?.rooms[0]?.images[0];
+  const cover = city.image ?? city.areas[0]?.rooms[0]?.images[0];
 
   return (
     <Link
@@ -30,7 +27,7 @@ export default function CityCard({ city }) {
       <div className="absolute bottom-0 left-0 right-0 p-5 text-white">
         <h3 className="text-xl font-bold">{city.name}</h3>
         <p className="text-sm text-slate-200">
-          {city.areas.length} areas · {roomCount} rooms
+          {city.areas.length} areas
         </p>
       </div>
     </Link>

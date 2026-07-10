@@ -1,0 +1,18 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background-color: #faf8f4;
+  color: #0f172a;
+}
+
+/* Keep Leaflet map tiles below sticky headers later on */
+.leaflet-container {
+  z-index: 0;
+}

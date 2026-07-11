@@ -24,7 +24,7 @@ export default function Home() {
 
         <div className="mt-6 grid gap-4 sm:grid-cols-3">
           {[
-            { count: "1", label: "Single Sharing" },
+            
             { count: "2", label: "Two Sharing" },
             { count: "3", label: "Three Sharing" },
             { count: "4", label: "Four Sharing" },
@@ -49,7 +49,6 @@ export default function Home() {
         <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {[
             { icon: "🛡️", label: "Security - CCTV surveillance" },
-            { icon: "🍽️", label: "Food" },
             { icon: "🧹", label: "Regular housekeeping" },
             { icon: "❄️", label: "AC" },
             { icon: "📶", label: "High-speed WiFi" },
@@ -57,7 +56,6 @@ export default function Home() {
             { icon: "🧺", label: "Washing machine" },
             { icon: "🧊", label: "Refrigerator" },
             { icon: "♨️", label: "Water heater" },
-            { icon: "🏍️", label: "Parking" },
             { icon: "💧", label: "RO Water" },
             { icon: "🏙️", label: "Terrace" },
           ].map((a) => (

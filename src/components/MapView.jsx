@@ -32,8 +32,7 @@ export default function MapView({ center, zoom = 15, markers = [], height = "20r
           <Marker key={m.id} position={[m.lat, m.lng]}>
             {m.popup && (
               <Popup>
-                <p className="font-semibold">{m.popup.title}</p>
-                <p className="text-slate-500">{m.popup.subtitle}</p>
+                <p className="font-semibold">{m.popup.subtitle}</p>
                 {m.popup.link && (
                   <Link to={m.popup.link} className="text-blue-600">View details →</Link>
                 )}

@@ -50,6 +50,7 @@ export default function ListingCard({ room }) {
 
         <div className="mt-auto pt-4">
           <span className="text-lg font-bold text-slate-900">{formatRent(room.rent)}</span>
+          <span className="ml-1 text-xs font-medium text-blue-400">+ EB</span>
         </div>
       </div>
     </Link>

@@ -62,6 +62,7 @@ export default function ListingDetail() {
 
           <h1 className="mt-2 text-3xl font-bold text-slate-900">{room.title}</h1>
           <p className="mt-2 text-2xl font-bold text-blue-600">{formatRent(room.rent)}</p>
+          <p className="mt-1 text-sm text-slate-500">+ Electricity bill (EB) as per usage</p>
           <p className="mt-1 text-sm text-slate-500">{room.sharingType} sharing</p>
 
           {room.note && <p className="mt-4 text-slate-600">{room.note}</p>}
@@ -75,7 +76,7 @@ export default function ListingDetail() {
 
           <div className="mt-8 rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200">
             <h2 className="font-semibold text-slate-900">Interested in this room?</h2>
-            <p className="mt-1 text-sm text-slate-600">Reach out directly — no sign-up needed.</p>
+            <p className="mt-1 text-sm text-slate-600">Reach out directly.</p>
             <div className="mt-4">
               <EnquireButtons roomTitle={room.title} />
             </div>

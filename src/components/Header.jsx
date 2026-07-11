@@ -15,6 +15,7 @@ export default function Header() {
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
         <NavLink to="/" className="flex items-center gap-2">
           <img src="/letter-l.png" alt="Loyola PG" className="h-10 w-auto" />
+          <span className=" px-3 py-1 font-semibold text-black">Loyola PG</span>
         </NavLink>
 
         <nav className="flex items-center gap-1">

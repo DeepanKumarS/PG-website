@@ -89,6 +89,9 @@ export default function Footer() {
         <p className="text-center text-xs text-slate-500">
           © {new Date().getFullYear()} {site.brandName}. All rights reserved.
         </p>
+        <p className="mt-1 text-center text-xs text-slate-400">
+          Disclaimer: Images shown on this website are for illustration purposes only. The actual rooms may differ from the images displayed.
+        </p>
       </div>
     </footer>
   );

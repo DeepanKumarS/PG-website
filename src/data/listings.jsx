@@ -12,10 +12,23 @@ const baseAmenities = [
 ];
 const acAmenities = ["AC", ...baseAmenities];
 
-const images = [
-  "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1200&q=60",
-  "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=1200&q=60",
+const images2 = [
+  "/2_sharing_room.jpeg",
+  
 ];
+
+const images4 = [
+  "/4_sharing_room.jpeg",
+  "/4_sharing_cabinet.jpeg",
+  "/table_littlemount.jpeg" 
+  
+]
+
+const images1 = [
+  "/thoraipakkam_building.jpeg",
+  "/2sharing_thoraipakkam.jpeg",
+  "/bed_thoraipakkam.jpeg",
+]
 
 export const cities = [
   {
@@ -27,18 +40,18 @@ export const cities = [
         id: "thoraipakkam",
         name: "Thoraipakkam",
         rooms: [
-          { id: "room_1", sharing: 2, sharingType: "Two", ac: true, title: "2 Sharing AC Room", rent: 9000, amenities: acAmenities, images, lat: 12.952417931305531, lng: 80.24105774407177, available: true },
-          { id: "room_2", sharing: 2, sharingType: "Two", ac: false, title: "2 Sharing Non-AC Room", rent: 8000, amenities: baseAmenities, images, lat: 12.952417931305531, lng: 80.24105774407177, available: true },
-          { id: "room_3", sharing: 3, sharingType: "Three", ac: true, title: "3 Sharing AC Room", rent: 7500, amenities: acAmenities, images, lat: 12.952417931305531, lng: 80.24105774407177, available: true },
-          { id: "room_4", sharing: 3, sharingType: "Three", ac: false, title: "3 Sharing Non-AC Room", rent: 6500, amenities: baseAmenities, images, lat: 12.952417931305531, lng: 80.24105774407177, available: true },
+          { id: "room_1", sharing: 2, sharingType: "Two", ac: true, title: "2 Sharing AC Room", rent: 9000, amenities: acAmenities, images: images1, lat: 12.952417931305531, lng: 80.24105774407177, available: true },
+          { id: "room_2", sharing: 2, sharingType: "Two", ac: false, title: "2 Sharing Non-AC Room", rent: 8000, amenities: baseAmenities, images: images1, lat: 12.952417931305531, lng: 80.24105774407177, available: true },
+          { id: "room_3", sharing: 3, sharingType: "Three", ac: true, title: "3 Sharing AC Room", rent: 7500, amenities: acAmenities, images: images1, lat: 12.952417931305531, lng: 80.24105774407177, available: true },
+          { id: "room_4", sharing: 3, sharingType: "Three", ac: false, title: "3 Sharing Non-AC Room", rent: 6500, amenities: baseAmenities, images: images1, lat: 12.952417931305531, lng: 80.24105774407177, available: true },
         ],
       },
       {
         id: "little-mount",
         name: "Little Mount",
         rooms: [
-          { id: "room_1", sharing: 2, sharingType: "Two", ac: true, title: "2 Sharing AC Room", rent: 7500, amenities: acAmenities, images, lat: 13.017683006454696, lng: 80.22828805968608, available: true },
-          { id: "room_2", sharing: 4, sharingType: "Four", ac: true, title: "4 Sharing AC Room", rent: 6500, amenities: acAmenities, images, lat: 13.017683006454696, lng: 80.22828805968608, available: true },
+          { id: "room_1", sharing: 2, sharingType: "Two", ac: true, title: "2 Sharing AC Room", rent: 7500, amenities: acAmenities, images: images2, lat: 13.017683006454696, lng: 80.22828805968608, available: true },
+          { id: "room_2", sharing: 4, sharingType: "Four", ac: true, title: "4 Sharing AC Room", rent: 6500, amenities: [...acAmenities, "Kitchen Utensils"], images: images4, lat: 13.017683006454696, lng: 80.22828805968608, available: true },
         ],
       },
     ],

@@ -22,6 +22,8 @@ export default function HeroBanner() {
           </h1>
           <p className="mt-4 text-lg text-slate-200">
             Experience comfortable and affordable PG living with modern amenities, flexible room-sharing options, and a welcoming environment for students and working professionals.
+          <br />
+            Contact: 8825603397 | 9841447028
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link to="/listings" className="rounded-lg bg-orange-400 px-6 py-3 font-semibold text-white shadow-lg hover:text-white-700">

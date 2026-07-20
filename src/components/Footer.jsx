@@ -38,10 +38,10 @@ export default function Footer() {
         <div>
           <h3 className="text-sm font-semibold text-slate-900">Contact</h3>
           <ul className="mt-3 space-y-2 text-sm text-slate-600">
-            <li><a href={`tel:+${site.phoneNumber}`} className="hover:text-blue-600">Call: +{site.phoneNumber}</a></li>
+            <li><a href={`tel:+${site.phoneNumber}`} className="hover:text-blue-600">Call: +{site.phoneNumber} / +{site.phoneNumber2}</a></li>
             <li>
               <a href={`https://wa.me/${site.whatsappNumber}`} target="_blank" rel="noreferrer" className="hover:text-green-600">
-                WhatsApp us
+                WhatsApp: {site.whatsappNumber.slice(2)} 
               </a>
             </li>
           </ul>

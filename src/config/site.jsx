@@ -6,4 +6,6 @@ export const site = {
   // Digits only, with country code, NO "+" and NO spaces (e.g. 91 for India).
   whatsappNumber: "918825603397",
   phoneNumber: "918825603397",
+
+  phoneNumber2: "919841447028",
 };

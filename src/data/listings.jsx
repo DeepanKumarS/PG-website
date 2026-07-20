@@ -40,10 +40,10 @@ export const cities = [
         id: "thoraipakkam",
         name: "Thoraipakkam",
         rooms: [
-          { id: "room_1", sharing: 2, sharingType: "Two", ac: true, title: "2 Sharing AC Room", rent: 9000, amenities: acAmenities, images: images1, lat: 12.952417931305531, lng: 80.24105774407177, available: true },
-          { id: "room_2", sharing: 2, sharingType: "Two", ac: false, title: "2 Sharing Non-AC Room", rent: 8000, amenities: baseAmenities, images: images1, lat: 12.952417931305531, lng: 80.24105774407177, available: true },
-          { id: "room_3", sharing: 3, sharingType: "Three", ac: true, title: "3 Sharing AC Room", rent: 7500, amenities: acAmenities, images: images1, lat: 12.952417931305531, lng: 80.24105774407177, available: true },
-          { id: "room_4", sharing: 3, sharingType: "Three", ac: false, title: "3 Sharing Non-AC Room", rent: 6500, amenities: baseAmenities, images: images1, lat: 12.952417931305531, lng: 80.24105774407177, available: true },
+          { id: "room_1", sharing: 2, sharingType: "Two", ac: true, title: "2 Sharing AC Room", rent: 7500, amenities: acAmenities, images: images1, lat: 12.952417931305531, lng: 80.24105774407177, available: true },
+          { id: "room_2", sharing: 2, sharingType: "Two", ac: false, title: "2 Sharing Non-AC Room", rent: 6500, amenities: baseAmenities, images: images1, lat: 12.952417931305531, lng: 80.24105774407177, available: true },
+          // { id: "room_3", sharing: 3, sharingType: "Three", ac: true, title: "3 Sharing AC Room", rent: 7500, amenities: acAmenities, images: images1, lat: 12.952417931305531, lng: 80.24105774407177, available: true },
+          // { id: "room_4", sharing: 3, sharingType: "Three", ac: false, title: "3 Sharing Non-AC Room", rent: 6500, amenities: baseAmenities, images: images1, lat: 12.952417931305531, lng: 80.24105774407177, available: true },
         ],
       },
       {
